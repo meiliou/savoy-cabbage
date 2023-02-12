@@ -1,0 +1,75 @@
+:root {
+    --primary: #5D8AA8;
+    --secondary: #89CFF0;
+    --tertiary: #364248;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--tertiary);
+    background-color: beige;
+}
+/* header/navigation */
+header {
+    padding: 15px 10px 15px 0px;
+    background-color: var(--tertiary);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    /* note: colour of text is overridden somehow */
+}
+header a {
+    text-decoration: underline;
+    color: var(--secondary);
+}
+header nav {
+    margin: 15px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+/* hero/banner*/
+.hero {
+    background-image: url("../images/02-hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    height: 200px;
+    filter: sepia(1) hue-rotate(149deg);
+    /*note: filter applied to .hero h2 as well*/
+}
+.hero h2 {
+    margin: 10px 30px;
+    padding: 5px 15px;
+    color: var(--tertiary);
+    font-size: 25px;
+    background-color: var(--secondary);
+}
+
+
